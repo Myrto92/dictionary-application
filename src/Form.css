@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #ffcab0;
+  --secondary-color: #e0ffcd;
+  --third-color: #ffebbb;
+  --fourth-color: brown;
+}
+
+.submit-button {
+  padding: 0 20px;
+  background-color: var(--primary-color);
+  border: 2px solid var(--fourth-color);
+  border-radius: 6px;
+  margin-left: 3px;
+  color: var(--fourth-color);
+  transition: 400ms all ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: var(--fourth-color);
+  color: var(--primary-color);
+}

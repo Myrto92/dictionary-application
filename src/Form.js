@@ -1,20 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
+import "./Form.css";
 
 export default function Form() {
+  let [keyword, setKeyword] = useState("");
+
+  function search(event) {
+    event.preventDefault();
+    alert(`Searching for ${keyword}`);
+  }
+
+  function handleChange(event) {
+    setKeyword(event.target.value);
+  }
+
   return (
     <div>
-      <div className="input-group">
-        <div className="form-outline">
-          <input type="search" id="form1" className="form-control" />
-          <label className="form-label" for="form1"></label>
-        </div>
-        <div>
-          <button type="button" className="btn btn-primary">
-            search
-            <i className="fas fa-search"></i>
-          </button>
-        </div>
-      </div>
+      <form onSubmit={search}>
+        <input
+          type="search"
+          placeholder="Type a word"
+          onChange={handleChange}
+          autoFocus="true"
+        />
+        <input type="submit" value="Search" className="submit-button" />
+      </form>
     </div>
   );
 }

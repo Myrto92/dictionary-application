@@ -6,10 +6,13 @@ import Form from "./Form";
 function App() {
   return (
     <div className="App">
-      <h1>Dictionary</h1>
       <header className="App-header">
-        <Form />
+        <h1>Dictionary</h1>
       </header>
+      <div className="container">
+        {" "}
+        <Form />
+      </div>
     </div>
   );
 }

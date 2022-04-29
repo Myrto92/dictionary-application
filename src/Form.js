@@ -28,14 +28,17 @@ export default function Form() {
   return (
     <div>
       <form onSubmit={search}>
-        <input
-          type="search"
-          placeholder="Type a word"
-          onChange={handleChange}
-          autoFocus={true}
-        />
-        <input type="submit" value="Search" className="submit-button" />
+        <section>
+          <input
+            type="search"
+            placeholder="Type a word"
+            onChange={handleChange}
+            autoFocus={true}
+          />
+          <input type="submit" value="Search" className="submit-button" />
+        </section>
       </form>
+
       <Results results={results} />
     </div>
   );

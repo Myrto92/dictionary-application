@@ -13,6 +13,15 @@ function App() {
         {" "}
         <Form />
       </div>
+      <footer>
+        Coded by {"  "}
+        <span>
+          <a href="https://github.com/Myrto92/dictionary-application">
+            {" "}
+            Myrto Vergou
+          </a>{" "}
+        </span>
+      </footer>
     </div>
   );
 }
